@@ -7,6 +7,8 @@ sudo apt-get -y install \
   ca-certificates \
   curl
 
+sudo apt-get remove -y docker-engine docker.io || true
+
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
 sudo add-apt-repository \
