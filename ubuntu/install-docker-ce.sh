@@ -5,6 +5,7 @@ CHANNEL=${CHANNEL:-edge}
 sudo apt-get -y install \
   apt-transport-https \
   ca-certificates \
+  software-properties-common \
   curl
 
 sudo apt-get remove -y docker-engine docker.io || true
